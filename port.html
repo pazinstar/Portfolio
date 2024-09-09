@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kelvin Mukaria's Portfolio">
+    <title>Kelvin Mukaria - Portfolio</title>
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            transition: background-color 0.5s ease;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 3em 0;
+            transition: padding 0.5s ease;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1em;
+            transition: transform 0.5s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            transition: color 0.5s ease;
+        }
+
+        header h1:hover {
+            color: #e74c3c;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #2980b9;
+            text-align: center;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.5s ease;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin: 2em 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards ease;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e74c3c;
+            margin-bottom: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .intro, .contact {
+            text-align: center;
+            padding: 2em;
+            background-color: #ffffff;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro:hover, .contact:hover {
+            background-color: #f9f9f9;
+        }
+
+        .personal-info {
+            background-color: #ffffff;
+            padding: 2em;
+            border-radius: 10px;
+            margin-top: 1em;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills, .projects, .links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill, .project, .link {
+            width: 45%;
+            background-color: #ffffff;
+            margin: 1em 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover, .project:hover, .link:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .education {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+    margin-bottom: 1em;
+}
+
+.education-item h3 {
+    color: #3498db;
+    margin: 0;
+}
+
+.education-item p {
+    margin: 0.5em 0;
+}
+
+
+        .link a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link a:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #e74c3c;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skill, .project, .link {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/k5JRGL0h/Whats-App-Image-2024-08-07-at-04-43-48.jpg" alt="Kelvin Mukaria's photo">
+        <h1>Kelvin Mukaria</h1>
+        <p>Web Developer | Mobile App Developer | Innovator</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#links">Links</a>
+        <a href="#personal-info">Personal Info</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="scroll-reveal">
+            <div class="intro">
+                <h2>About Me</h2>
+                <p>Hello! I'm Kelvin Mukaria, a passionate web and mobile app developer with over 3 years of experience in building dynamic websites, e-commerce platforms, and mobile apps. I specialize in Python and PHP with frameworks such as Django and Laravel, and I’ve worked on several projects, including DarkSales-SHC, Xenneotechs, and Tradelines Supply Blucash.</p>
+                <p>I’m always looking for opportunities to innovate and create solutions that make a difference. My recent work involves integrating AI models like Gemini and DistilGPT-2 into projects and developing mobile apps using Xamarin and Flutter.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-reveal">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <p>Proficient in HTML, CSS, JavaScript, Python (Django), and PHP (Laravel) for developing scalable web applications and e-commerce platforms.</p>
+                </div>
+                <div class="skill">
+                    <h3>Mobile Development</h3>
+                    <p>Experienced with Xamarin, Flutter, and Kotlin for building cross-platform mobile applications with responsive user interfaces.</p>
+                </div>
+                <div class="skill">
+                    <h3>AI Integration</h3>
+                    <p>Integrated AI models like Gemini and DistilGPT-2 into various projects, enhancing user experience with intelligent automation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="scroll-reveal">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>DarkSales-SHC</h3>
+                    <p>A full-featured e-commerce platform for selling gift cards and services, built with Laravel and integrated with a payment gateway and admin dashboard.</p>
+                </div>
+                <div class="project">
+                    <h3>Tradelines Supply Blucash</h3>
+                    <p>An affiliate marketing website developed using Django, featuring detailed analytics and a referral program.</p>
+                </div>
+                <div class="project">
+                    <h3>T-Scholler App</h3>
+                    <p>A mobile app designed to manage multiple pool game recordings, targeting businesses around Machakos University.</p>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="scroll-reveal">
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science (Mathematics and  Computer Science)</h3>
+                    <p><strong>Institution:</strong> Machakos University</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Details:</strong> Graduated with a degree in Computer Science, focusing on web development, mobile applications, and innovative solutions.</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="links" class="scroll-reveal">
+            <h2>Links</h2>
+            <div class="links">
+                <div class="link">
+                    <h3>My GitHub</h3>
+                    <p><a href="https://github.com/kelvinmukaria" target="_blank">https://github.com/pazinstar</a></p>
+                </div>
+                <div class="link">
+                    <h3>My LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/kelvinmukaria" target="_blank">www.linkedin.com/in/pazinstar</a></p>
+                </div>
+                <div class="link">
+                    <h3>My CV</h3>
+                    <p><a href="resume (Kelvin Mukaria).pdf" target="_blank">Download My CV</a></p>
+                </div>
+                <div class="link">
+                    <h3>Portfolio Website</h3>
+                    <p><a href="https://kelvinmukaria.dev" target="_blank">https://kelvinmukaria.dev</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal-info" class="scroll-reveal">
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <p><strong>Age:</strong> 25</p>
+                <p><strong>Marital Status:</strong> Single</p>
+                <p><strong>Ethnicity:</strong> African</p>
+                <p><strong>Languages:</strong> English, Basic German</p>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-reveal">
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pazinstar@gmail.com">pazinstar@gmail.com</a> or call me at +254 705 752 300.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Kelvin Mukaria | <a href="#contact">Contact Me</a></p>
+    </footer>
+
+    <script>
+        // Scroll reveal effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.scroll-reveal');
+            const options = {
+                threshold: 0.1,
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Sticky nav effect
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 100) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        };
+    </script>
+</body>
+</html>
