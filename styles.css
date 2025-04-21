@@ -1,0 +1,226 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #3498db;
+
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+  transition: padding 0.5s ease;
+}
+
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1em;
+  transition: transform 0.5s ease;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  transition: color 0.5s ease;
+}
+
+header h1:hover {
+  color: #e74c3c;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+nav {
+  background-color: #2980b9;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.5s ease;
+}
+
+nav a:hover {
+  color: #e74c3c;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  margin: 2em 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards ease;
+}
+
+h2 {
+  text-align: center;
+  color: #5e24ca;
+  margin-bottom: 1em;
+  transition: color 0.3s ease;
+}
+
+.intro,
+.contact {
+  text-align: center;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro:hover,
+.contact:hover {
+  background-color: #f9f9f9;
+}
+
+.personal-info {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 1em;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills,
+.projects,
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill,
+.project,
+.link {
+  width: 45%;
+  background-color: #ffffff;
+  margin: 1em 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover,
+.project:hover,
+.link:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.education {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 10px;
+  margin-top: 1em;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  margin-bottom: 1em;
+  display: grid; 
+  grid-template-columns: 25% 1fr; 
+  gap: 20px; 
+  align-items: center;
+}
+
+.education-item h3 {
+  color: #3498db;
+  margin: 0;
+}
+
+.education-item p {
+  margin: 0.5em 0;
+}
+#achievement_img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.link a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #2980b9;
+}
+
+footer {
+  background-color: #2980b9;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e74c3c;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .skill,
+  .project,
+  .link {
+    width: 100%;
+  }
+  .education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.education-item h3 {
+   font: 1em sans-serif;
+}
+
+
+}

@@ -5,202 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kelvin Mukaria's Portfolio">
     <title>Kelvin Mukaria - Portfolio</title>
-    <style>
-         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-            transition: background-color 0.5s ease;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            background-color: #3498db;
-            
-            color: white;
-            text-align: center;
-            padding: 3em 0;
-            transition: padding 0.5s ease;
-        }
-
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 1em;
-            transition: transform 0.5s ease;
-        }
-
-        header img:hover {
-            transform: scale(1.1);
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            transition: color 0.5s ease;
-        }
-
-        header h1:hover {
-            color: #e74c3c;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        nav {
-            background-color: #2980b9;
-            text-align: center;
-            padding: 1em;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-            transition: color 0.5s ease;
-        }
-
-        nav a:hover {
-            color: #e74c3c;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        section {
-            margin: 2em 0;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s forwards ease;
-        }
-
-        h2 {
-            text-align: center;
-            color: #e74c3c;
-            margin-bottom: 1em;
-            transition: color 0.3s ease;
-        }
-
-        .intro, .contact {
-            text-align: center;
-            padding: 2em;
-            background-color: #ffffff;
-            border-radius: 10px;
-            transition: background-color 0.5s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .intro:hover, .contact:hover {
-            background-color: #f9f9f9;
-        }
-
-        .personal-info {
-            background-color: #ffffff;
-            padding: 2em;
-            border-radius: 10px;
-            margin-top: 1em;
-            text-align: left;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .skills, .projects, .links {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .skill, .project, .link {
-            width: 45%;
-            background-color: #ffffff;
-            margin: 1em 0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skill:hover, .project:hover, .link:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .education {
-    background-color: #ffffff;
-    padding: 2em;
-    border-radius: 10px;
-    margin-top: 1em;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.education-item {
-    margin-bottom: 1em;
-}
-
-.education-item h3 {
-    color: #3498db;
-    margin: 0;
-}
-
-.education-item p {
-    margin: 0.5em 0;
-}
-
-
-        .link a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .link a:hover {
-            color: #2980b9;
-        }
-
-        footer {
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #e74c3c;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .skill, .project, .link {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -245,21 +50,21 @@
                     <div class="row">
                         <!-- Picture 1: Attended World Conference IASP 2024 -->
                         <div class="col-md-4 mb-4">
-                            <img src="iasp.jpeg" alt="Kelvin Mukaria at World Conference IASP 2024" class="img-fluid mb-2" style="max-height: 250px;">
+                            <img src="iasp.jpeg" alt="Kelvin Mukaria at World Conference IASP 2024" class="img-fluid mb-2"  id="achievement_img" >
                             <p><strong>Attended World Conference IASP 2024</strong></p>
                             <p>I participated in the prestigious World Conference for the International Association of Science Parks (IASP) in 2024, sharing ideas on tech innovations with global thought leaders.</p>
                         </div>
             
                         <!-- Picture 2: In Computer Lab doing software development -->
                         <div class="col-md-4 mb-4">
-                            <img src="comp.jpeg" alt="Kelvin Mukaria in Computer Lab" class="img-fluid mb-2" style="max-height: 250px;">
+                            <img src="comp.jpeg" alt="Kelvin Mukaria in Computer Lab" class="img-fluid mb-2" id="achievement_img">
                             <p><strong>Software Development in Computer Lab</strong></p>
                             <p>Working in the computer lab, where I developed multiple software projects, including mobile and web applications using cutting-edge technologies.</p>
                         </div>
             
                         <!-- Picture 3: With a Chinese colleague at a conference -->
                         <div class="col-md-4 mb-4">
-                            <img src="china.png" alt="Kelvin Mukaria with a Chinese colleague" class="img-fluid mb-2" style="max-height: 250px;">
+                            <img src="china.png" alt="Kelvin Mukaria with a Chinese colleague" class="img-fluid mb-2"  id="achievement_img" style="max-height: 250px;">
                             <p><strong>Conference with a Chinese Colleague</strong></p>
                             <p>Engaging in discussions at an international conference with a Chinese colleague, exploring collaborations on tech projects and global partnerships.</p>
                         </div>
@@ -347,7 +152,7 @@
         <section id="education" class="scroll-reveal">
             <div class="education">
                 <h2>Highest Education</h2>
-                <div class="education-item" style="display: grid; grid-template-columns: 25% 1fr; gap: 20px; align-items: center;">
+                <div class="education-item">
                     <img src="graduation.png" alt="Machakos University" style="width:100%; height:auto;">
                     <div>
                         <h3>Bachelor of Science (Mathematics and Computer Science)</h3>
@@ -388,10 +193,11 @@
             <div class="personal-info">
                 <h2>Personal Information</h2>
                 <p><strong>Age:</strong> 24</p>
-                <p><strong>Marital Status:</strong> Single</p>
+                <p><strong>Marital Status:</strong> Married</p>
                 <p><strong>Ethnicity:</strong> African</p>
-                <p><strong>Languages:</strong> English, Swahili and Basic German</p>
-                 <p><strong> Current Location:</strong> Nairobi, KENYA</p>
+                <p><strong>Languages:</strong> English and Swahili</p>
+                <p><strong>Faith:</strong> Christian</p>
+                <p><strong> Current Location:</strong> Nairobi, KENYA</p>
                
             </div>
         </section>
